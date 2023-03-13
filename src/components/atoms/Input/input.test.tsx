@@ -9,18 +9,13 @@ describe('<Input />', () => {
     const onChangeText = jest.fn();
 
     const { getByPlaceholderText } = render(
-      <Input
-        onChangeText={onChangeText}
-        placeholder='Buscar frase'
-        value={''}
-      />
+      <Input onChangeText={onChangeText} placeholder="Buscar frase" value={''} />
     );
 
     const inputElement = getByPlaceholderText('Buscar frase');
-    fireEvent.change(inputElement, {target: {value: newValue}});
+    fireEvent.change(inputElement, { target: { value: newValue } });
 
     expect(onChangeText).toHaveBeenCalledTimes(1);
     expect(onChangeText).toHaveBeenCalledWith(newValue);
   });
-
 });

@@ -13,11 +13,12 @@ import styles from './styles';
  */
 const Button: React.FC<ButtonType> = ({ text, onClick, disabled, type = 'button' }) => {
   return (
-    <button 
-      onClick={onClick} 
-      disabled={disabled} 
-      style={!disabled ? styles.button : styles.buttonDisabled} 
-      type={type}>
+    <button
+      onClick={onClick}
+      disabled={disabled}
+      style={!disabled ? styles.button : styles.buttonDisabled}
+      type={type}
+    >
       {text}
     </button>
   );

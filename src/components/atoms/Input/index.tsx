@@ -10,13 +10,7 @@ import styles from './styles';
  * @param {Function} props.getRef reference to the component
  * @param {string} props.placeholder input placeholder
  */
-const Input: React.FC<InputType> = ({
-  key = '',
-  onChangeText,
-  value,
-  getRef,
-  placeholder
-}) => {
+const Input: React.FC<InputType> = ({ key = '', onChangeText, value, getRef, placeholder }) => {
   return (
     <div style={styles.container}>
       <input

@@ -4,12 +4,12 @@ import { Home } from './screens';
 /**
  * main component for the app
  */
-const App : React.FC = () => {  
+const App: React.FC = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/home' element={<Home />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/home" element={<Home />} />
       </Routes>
     </BrowserRouter>
   );

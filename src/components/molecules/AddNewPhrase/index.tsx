@@ -27,13 +27,9 @@ const AddNewPhrase: React.FC<Props> = ({ handleAddNewPhrase }) => {
   return (
     <Section>
       <text style={styles.title}>Agregá una frase</text>
-      <form onSubmit = {handleSubmit}>
-        <Input onChangeText={setNewPhrase} placeholder='Agregar frase' value={newPhrase} />
-        <Button
-          text='Agregar'
-          disabled={newPhrase.length === 0}
-          type='submit'
-        />
+      <form onSubmit={handleSubmit}>
+        <Input onChangeText={setNewPhrase} placeholder="Agregar frase" value={newPhrase} />
+        <Button text="Agregar" disabled={newPhrase.length === 0} type="submit" />
       </form>
     </Section>
   );

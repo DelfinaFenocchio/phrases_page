@@ -10,9 +10,7 @@ interface Props {
  * @param {React.ReactElement} props.children
  */
 const PhrasesList: React.FC<Props> = ({ children }) => (
-  <div style={styles.container}>
-    {children}
-  </div>
+  <div style={styles.container}>{children}</div>
 );
 
 export default PhrasesList;

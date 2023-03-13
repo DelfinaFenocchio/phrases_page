@@ -5,7 +5,7 @@ afterAll(cleanup);
 
 const mockedProps = {
   onClick: jest.fn(),
-  text: 'Continuar'
+  text: 'Continuar',
 };
 
 describe('<Button />', () => {
@@ -24,7 +24,9 @@ describe('<Button />', () => {
   });
 
   it('Verify button disabled', async () => {
-    const { getByText } = render(<Button text={mockedProps.text} disabled onClick={mockedProps.onClick}/>);
+    const { getByText } = render(
+      <Button text={mockedProps.text} disabled onClick={mockedProps.onClick} />
+    );
     const button = getByText(mockedProps.text);
     expect(button).toBeDisabled();
   });
