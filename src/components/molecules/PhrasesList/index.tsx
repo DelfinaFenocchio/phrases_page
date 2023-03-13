@@ -20,11 +20,15 @@ const PhrasesList: React.FC<Props> = ({ phrases, handleRemovePhrase }) => {
   return (
     <Section>
       <text style={styles.title}>Lista de frases</text>
-      <Input onChangeText={setTextToSearch} placeholder='Buscar frase' value={textToSearch} />
+      <Input onChangeText={setTextToSearch} placeholder="Buscar frase" value={textToSearch} />
       <div style={styles.containerList}>
-        {filteredPhrases.map((phrase) => (
-          <PhraseItem phrase={phrase} key={phrase.id} handleRemovePhrase={handleRemovePhrase}/>
-        ))}
+        {filteredPhrases.length > 0 ? (
+          filteredPhrases.map((phrase) => (
+            <PhraseItem phrase={phrase} key={phrase.id} handleRemovePhrase={handleRemovePhrase} />
+          ))
+        ) : (
+          <p>No hay frases</p>
+        )}
       </div>
     </Section>
   );
