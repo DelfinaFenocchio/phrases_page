@@ -1,0 +1,1 @@
+export { default as phrasesItems } from './globalConstants/phrases';
