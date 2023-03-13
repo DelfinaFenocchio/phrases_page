@@ -3,6 +3,7 @@ import styles from './styles';
 
 /**
  * custom input component
+ * TODO: add custom styles
  * @param {object} props
  * @param {(text: string) => void | Promise<void> } props.onChangeText
  * @param {string} props.key key for the component

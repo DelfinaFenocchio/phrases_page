@@ -9,7 +9,8 @@ import styles from './styles';
  * @param {() => void | Promise<void> } props.onClick on click callback
  * @param {boolean} props.disabled if component should be disabled
  * @param {'submit' | 'reset' | 'button'} props.type button type
- * // TODO: reuse default button styles to not repeat it in buttondisabled
+ * TODO: reuse default button styles to not repeat it in buttondisabled
+ * TODO: add custom styles
  */
 const Button: React.FC<ButtonType> = ({ text, onClick, disabled, type = 'button' }) => {
   return (

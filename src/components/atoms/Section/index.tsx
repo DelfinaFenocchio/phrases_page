@@ -6,6 +6,7 @@ interface Props {
 
 /**
  * section container to contain for example the section to add a new phrase
+ * TODO: add custom styles
  * @param {object} props
  * @param {React.ReactElement} props.children
  */
