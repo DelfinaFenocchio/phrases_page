@@ -18,9 +18,21 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "noImplicitAny": false,
+    "baseUrl": "src",
+    "paths": {
+      "@molecules/*": ["./components/molecules/*"],
+      "@molecules": ["./components/molecules/index"],
+      "@atoms/*": ["./components/atoms/*"],
+      "@atoms": ["./components/atoms/index"],
+      "@types": ["./types"],
+      "@assets/*": ["./assets/*"],
+      "@assets": ["./assets/index"],
+      
+    }
   },
   "include": [
     "src"
-  ]
+  ],
 }
