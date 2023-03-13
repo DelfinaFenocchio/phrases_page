@@ -5,7 +5,6 @@ const styles: Record<string, React.CSSProperties> = {
     display: 'grid',
     justifyContent: 'center',
     gridTemplateColumns: 'repeat(auto-fit, minmax(15rem, 1fr))',
-    // gridTemplateColumns: 'repeat(auto-fit, 1fr)',
     width: '100%',
     gap: '1rem'
   },

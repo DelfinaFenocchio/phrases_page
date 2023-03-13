@@ -5,9 +5,7 @@ const styles: Record<string, React.CSSProperties> = {
     display: 'flex',
     borderRadius: '10px',
     padding: '1rem',
-    // margin: '1rem',
     justifyContent: 'center',
-    // opacity: 0.5,
     backgroundColor: Colors.secondary,
     transition: 'color 0.2s ease-in',
     flexDirection: 'column'
